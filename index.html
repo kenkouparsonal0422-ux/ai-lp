@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIプログラミング学習コミュニティ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        .hero {
+            background: #2c3e50;
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #e67e22;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background: #d35400;
+        }
+        section {
+            padding: 3rem 2rem;
+            background: #fff;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+        section:nth-child(odd) {
+            background: #f9f9f9;
+        }
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        .features, .testimonials, .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .feature, .testimonial, .faq-item {
+            background: #f4f7f9;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .testimonial {
+             font-style: italic;
+        }
+        .testimonial-author {
+            margin-top: 1rem;
+            font-weight: bold;
+            font-style: normal;
+        }
+        .how-to-join {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: #2c3e50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>AI Code Hub</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>AIと共に、未来のコードを創造しよう。</h2>
+            <p>初心者から経験者まで、AIプログラミングを学び、実践し、共に成長するコミュニティ。</p>
+            <a href="#" class="cta-button">今すぐDiscordに参加する</a>
+        </section>
+
+        <div class="container">
+            <section id="problems">
+                <h3>こんな悩み、ありませんか？</h3>
+                <div class="features">
+                    <div class="feature">
+                        <h4>学習の壁</h4>
+                        <p>AIプログラミングを始めたけど、何から手をつければいいか分からない。</p>
+                    </div>
+                    <div class="feature">
+                        <h4>情報の孤立</h4>
+                        <p>最新情報や実践的なノウハウをどこで得ればいいか分からない。</p>
+                    </div>
+                    <div class="feature">
+                        <h4>モチベーションの低下</h4>
+                        <p>一人での学習が続きにくく、気軽に質問できる仲間がいない。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solution">
+                <h3>AI Code Hubが、その悩みを解決します。</h3>
+                 <div class="features">
+                    <div class="feature">
+                        <h4>体系的な学習ロードマップ</h4>
+                        <p>初心者でも迷わない、レベル別の学習ロードマップを提供します。</p>
+                    </div>
+                    <div class="feature">
+                        <h4>最先端の情報共有</h4>
+                        <p>専門家やメンバーによる最新論文の共有や、勉強会を定期的に開催します。</p>
+                    </div>
+                    <div class="feature">
+                        <h4>切磋琢磨できる仲間</h4>
+                        <p>同じ目標を持つ仲間と繋がり、プロジェクトやコンペに挑戦できます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features">
+                <h3>コミュニティの主な活動</h3>
+                <div class="features">
+                    <div class="feature">
+                        <h5>もくもく会 & 質問会</h5>
+                        <p>毎週開催されるオンラインのもくもく会で、集中して作業を進めたり、分からないことを気軽に質問できます。</p>
+                    </div>
+                    <div class="feature">
+                        <h5>プロジェクト開発</h5>
+                        <p>チームを組んで、AIを使ったアプリケーションやサービスを開発。企画からリリースまでを経験できます。</p>
+                    </div>
+                    <div class="feature">
+                        <h5>限定セミナー・勉強会</h5>
+                        <p>業界の専門家を招いたセミナーや、特定のテーマを深く掘り下げる勉強会を定期的に開催します。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h3>参加者の声</h3>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"独学で行き詰まっていましたが、このコミュニティのおかげで疑問をすぐに解消でき、学習が加速しました。"</p>
+                        <p class="testimonial-author">- T. Yamada / Webデベロッパー</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"多様なバックグラウンドを持つメンバーとの交流が刺激的です。新しい視点やアイデアを得られます。"</p>
+                        <p class="testimonial-author">- S. Ito / データサイエンティスト</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"チーム開発の経験は初めてでしたが、メンバーに支えられ、ポートフォリオになる作品を完成できました。"</p>
+                        <p class="testimonial-author">- K. Suzuki / 学生</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="join" class="how-to-join">
+                <h3>参加は簡単、3ステップ</h3>
+                <p>今すぐコミュニティに参加して、AIプログラミングの学習を始めましょう。</p>
+                <ol style="display: inline-block; text-align: left;">
+                    <li>下のボタンをクリックしてDiscordサーバーに参加。</li>
+                    <li>簡単な自己紹介を投稿。</li>
+                    <li>興味のあるチャンネルに参加して交流スタート！</li>
+                </ol>
+                <br><br>
+                <a href="#" class="cta-button">Discordに参加して学習を始める</a>
+            </section>
+
+            <section id="faq">
+                <h3>よくある質問</h3>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>プログラミング初心者でも大丈夫ですか？</h4>
+                        <p>はい、大歓迎です。初心者向けの学習コンテンツやサポート体制が整っていますので、安心してご参加ください。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>費用はかかりますか？</h4>
+                        <p>基本的な活動への参加は無料です。一部の特別なセミナーなどで費用が発生する場合がありますが、その際は事前に告知します。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>どんな人が参加していますか？</h4>
+                        <p>学生、社会人、フリーランスなど、様々な職種や年齢層の方が参加しています。AIに興味があるという共通点で繋がっています。</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Code Hub. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
